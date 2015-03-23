@@ -1,6 +1,6 @@
 /* line 11, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
 body {
-  min-width: 850px;
+  min-width: 900px;
   background: #d4d4d4 url("../images/background.png");
   font-family: "Pacifico", cursive;
   color: #30302F; }
@@ -22,7 +22,7 @@ body {
     width: 120px;
     height: 35px;
     line-height: 35px;
-    background: #00A0B5;
+    background: rgba(0, 160, 181, 0.9);
     color: white;
     text-align: center;
     border-radius: 5px;
@@ -30,10 +30,10 @@ body {
     outline: none; }
     /* line 42, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
     body .roundedBtn:hover {
-      background: #0087A0; }
+      background: rgba(0, 135, 160, 0.9); }
     /* line 46, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
     body .roundedBtn:active {
-      background: #007484;
+      background: rgba(0, 116, 132, 0.9);
       box-shadow: 0px 2px 5px #30302F; }
   /* line 52, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
   body .noFocusInput {
@@ -179,8 +179,9 @@ body {
             height: 100%; }
             /* line 221, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
             body header #headerContentDiv #learnMoreContainerDiv #learnMoreDetailsDiv #videoDiv video {
+              right: -webkit-calc(50% - 230px);
+              right: calc(50% - 230px);
               position: absolute;
-              right: 35%;
               margin-top: 10px; }
           /* line 228, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
           body header #headerContentDiv #learnMoreContainerDiv #learnMoreDetailsDiv #showVideoBtn {
@@ -236,7 +237,7 @@ body {
             border: none;
             border-top-left-radius: 0px;
             border-bottom-left-radius: 0px;
-            background-color: #BFE288;
+            background-color: rgba(191, 226, 136, 0.9);
             color: #30302F; }
             /* line 289, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
             body header #headerContentDiv #whenWhereContainerDiv #whenWhereForm #mainContinueBtn:disabled {
@@ -244,97 +245,154 @@ body {
               opacity: 0.2; }
             /* line 293, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
             body header #headerContentDiv #whenWhereContainerDiv #whenWhereForm #mainContinueBtn:hover {
-              background-color: #93C84B; }
+              background-color: rgba(147, 200, 75, 0.9); }
             /* line 296, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
             body header #headerContentDiv #whenWhereContainerDiv #whenWhereForm #mainContinueBtn:active {
-              background-color: #80A840; }
-  /* line 309, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-  body #landingCoreDiv #ideasTitleDiv {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 1.25rem; }
-    /* line 314, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-    body #landingCoreDiv #ideasTitleDiv hr {
+              background-color: rgba(128, 168, 64, 0.9); }
+  /* line 308, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+  body #landingCoreDiv {
+    width: 100%;
+    box-shadow: 0px 5px 10px #30302F; }
+    /* line 313, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+    body #landingCoreDiv #ideasTitleDiv {
+      padding-top: 40px;
+      text-align: center;
+      font-size: 1.25rem; }
+      /* line 318, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+      body #landingCoreDiv #ideasTitleDiv hr {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: -webkit-calc(50% - 120px);
+        width: calc(50% - 120px);
+        margin: 20px auto 0px auto;
+        height: 1px;
+        background: rgba(48, 48, 47, 0.2);
+        border: none; }
+      /* line 328, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+      body #landingCoreDiv #ideasTitleDiv .leftHr {
+        float: left; }
+      /* line 332, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+      body #landingCoreDiv #ideasTitleDiv .rightHr {
+        float: right; }
+    /* line 336, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+    body #landingCoreDiv #ideasDiv {
+      margin-top: 40px; }
+      /* line 339, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+      body #landingCoreDiv #ideasDiv .ideasRowDiv {
+        padding-bottom: 40px; }
+        /* line 342, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+        body #landingCoreDiv #ideasDiv .ideasRowDiv .trailingIdea {
+          margin-left: -webkit-calc(50% - 425px);
+          margin-left: calc(50% - 425px); }
+        /* line 346, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+        body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton {
+          display: inline-block;
+          width: 280px;
+          height: 280px;
+          border-radius: 50%;
+          outline: none; }
+          /* line 353, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+          body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv {
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            transition: all 0.2s;
+            width: 270px;
+            height: 270px;
+            border-radius: 50%;
+            border: 5px solid #F08C21;
+            box-shadow: 0px 5px 10px #30302F; }
+            /* line 361, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+            body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv {
+              width: 260px;
+              height: 260px;
+              border-radius: 50%;
+              border: 5px solid #FFFFFF; }
+              /* line 367, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+              body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv {
+                width: 240px;
+                height: 240px;
+                border-radius: 50%;
+                border: 10px solid #30302F;
+                overflow: hidden; }
+                /* line 374, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+                body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv .penguinPopupDiv {
+                  -webkit-transition: all 0.2s;
+                  -moz-transition: all 0.2s;
+                  transition: all 0.2s;
+                  height: 240px;
+                  width: 240px;
+                  text-align: center; }
+                  /* line 381, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+                  body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv .penguinPopupDiv img {
+                    -webkit-transition: all 0.2s;
+                    -moz-transition: all 0.2s;
+                    transition: all 0.2s;
+                    margin-top: 70px;
+                    margin-left: -400px; }
+                /* line 388, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+                body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv .hoverPenguinPopupDiv {
+                  background: rgba(48, 48, 47, 0.5); }
+                  /* line 391, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+                  body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv .hoverPenguinPopupDiv img {
+                    margin-left: -0px !important; }
+                /* line 396, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+                body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv .activePenguinPopupDiv {
+                  background: rgba(48, 48, 47, 0.6) !important; }
+                /* line 400, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+                body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv .labelContainerDiv {
+                  -webkit-transition: all 0.2s;
+                  -moz-transition: all 0.2s;
+                  transition: all 0.2s;
+                  margin-top: -90px;
+                  width: 240px;
+                  height: 100px;
+                  background: rgba(0, 160, 181, 0.9); }
+                  /* line 407, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+                  body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv .labelContainerDiv h3 {
+                    font-weight: normal;
+                    font-size: 1.25rem;
+                    text-align: center;
+                    color: #FFFFFF;
+                    padding-top: 10px; }
+                /* line 416, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+                body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv .hoverLabelDiv {
+                  background: rgba(0, 135, 160, 0.9); }
+                /* line 420, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+                body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv .activeLabelDiv {
+                  background: rgba(0, 116, 132, 0.9) !important; }
+              /* line 424, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+              body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv #imgGetTogetherDiv {
+                background: url(../images/get-together.jpg) no-repeat;
+                background-size: cover; }
+              /* line 428, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+              body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv #imgBirthdayDiv {
+                background: url(../images/birthday.jpg) no-repeat;
+                background-size: cover; }
+              /* line 432, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+              body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv #imgWeddingDiv {
+                background: url(../images/wedding.jpg) no-repeat;
+                background-size: cover; }
+              /* line 436, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+              body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton .orangeCircleDiv .whiteCircleDiv #imgPlaceholderDiv {
+                background: url(../images/placeholder.jpg) no-repeat;
+                background-size: cover; }
+          /* line 444, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+          body #landingCoreDiv #ideasDiv .ideasRowDiv .imgButton:active .orangeCircleDiv {
+            box-shadow: 0px 2px 5px #30302F; }
+  /* line 456, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+  body footer {
+    height: 60px;
+    background: rgba(0, 160, 181, 0.2); }
+    /* line 460, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+    body footer div {
       position: relative;
       top: 50%;
       transform: translateY(-50%);
-      width: -webkit-calc(50% - 120px);
-      width: calc(50% - 120px);
-      margin: 20px auto 0px auto;
-      height: 1px;
-      background: rgba(48, 48, 47, 0.2);
-      border: none; }
-    /* line 324, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-    body #landingCoreDiv #ideasTitleDiv .leftHr {
-      float: left; }
-    /* line 328, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-    body #landingCoreDiv #ideasTitleDiv .rightHr {
-      float: right; }
-  /* line 332, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-  body #landingCoreDiv #ideasDiv {
-    margin-top: 40px; }
-    /* line 335, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-    body #landingCoreDiv #ideasDiv .imgButton {
-      display: inline-block;
-      width: 280px;
-      height: 280px;
-      border-radius: 50%;
-      outline: none; }
-      /* line 342, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-      body #landingCoreDiv #ideasDiv .imgButton .orangeCircleDiv {
-        -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        transition: all 0.2s;
-        width: 270px;
-        height: 270px;
-        border-radius: 50%;
-        border: 5px solid #F08C21;
-        box-shadow: 0px 5px 10px #30302F; }
-        /* line 350, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-        body #landingCoreDiv #ideasDiv .imgButton .orangeCircleDiv .whiteCircleDiv {
-          width: 260px;
-          height: 260px;
-          border-radius: 50%;
-          border: 5px solid #FFFFFF; }
-          /* line 356, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-          body #landingCoreDiv #ideasDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv {
-            width: 240px;
-            height: 240px;
-            border-radius: 50%;
-            border: 10px solid #30302F;
-            overflow: hidden; }
-            /* line 363, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-            body #landingCoreDiv #ideasDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv .labelContainerDiv {
-              -webkit-transition: all 0.2s;
-              -moz-transition: all 0.2s;
-              transition: all 0.2s;
-              margin-top: 170px;
-              width: 240px;
-              height: 100px;
-              background: #00A0B5; }
-              /* line 370, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-              body #landingCoreDiv #ideasDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv .labelContainerDiv h3 {
-                font-weight: normal;
-                font-size: 1.25rem;
-                text-align: center;
-                color: #FFFFFF;
-                padding-top: 10px; }
-            /* line 379, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-            body #landingCoreDiv #ideasDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv .hoveredLabelDiv {
-              -webkit-transition: all 0.2s;
-              -moz-transition: all 0.2s;
-              transition: all 0.2s;
-              background: #0087A0; }
-            /* line 384, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-            body #landingCoreDiv #ideasDiv .imgButton .orangeCircleDiv .whiteCircleDiv .imgCircleDiv .clickedLabelDiv {
-              -webkit-transition: all 0.2s;
-              -moz-transition: all 0.2s;
-              transition: all 0.2s;
-              background: #007484 !important; }
-          /* line 390, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-          body #landingCoreDiv #ideasDiv .imgButton .orangeCircleDiv .whiteCircleDiv #imgWeddingDiv {
-            background: url(../images/wedding.png) no-repeat;
-            background-size: cover; }
-      /* line 398, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
-      body #landingCoreDiv #ideasDiv .imgButton:active .orangeCircleDiv {
-        box-shadow: 0px 2px 5px #30302F; }
+      padding: 0px 2rem;
+      float: right;
+      opacity: 0.6; }
+      /* line 466, C:/Users/Patrick/Documents/sociaLnk_proto/source/stylesheets/all.css.scss */
+      body footer div img {
+        height: 15px;
+        margin-right: 15px; }

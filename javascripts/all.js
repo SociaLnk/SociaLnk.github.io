@@ -91,13 +91,16 @@ $(document).ready(function() {
 
 	// img button hover/click
     $(".imgButton").hover(function(){
-		$(this).find('.labelContainerDiv').toggleClass("hoveredLabelDiv");
+		$(this).find('.labelContainerDiv').toggleClass("hoverLabelDiv");
+		$(this).find('.penguinPopupDiv').toggleClass("hoverPenguinPopupDiv");
     });
 
     $(".imgButton").mousedown(function(){
-		$(this).find('.labelContainerDiv').toggleClass("clickedLabelDiv");
+		$(this).find('.labelContainerDiv').toggleClass("activeLabelDiv");
+		$(this).find('.penguinPopupDiv').toggleClass("activePenguinPopupDiv");
     });
     $(".imgButton").mouseup(function(){
-		$(this).find('.labelContainerDiv').toggleClass("clickedLabelDiv");
+		$(this).find('.labelContainerDiv').toggleClass("activeLabelDiv");
+		$(this).find('.penguinPopupDiv').toggleClass("activePenguinPopupDiv");
     });
 });
